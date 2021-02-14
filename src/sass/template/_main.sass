@@ -1,0 +1,174 @@
+main
+  position: relative
+.decor-background 
+  position: absolute
+  width: 126px
+  height: 429px
+  background-image: radial-gradient(#99a9c8 10%, transparent 10%)
+  background-position: 17px 17px
+  background-size: 30px 30px
+  right: 0
+  top: 200px
+
+.section
+  margin-top: 4.125rem
+  &__galery
+    margin: 0 auto
+    position: relative
+
+.text14
+  font-size: 0.875rem
+  padding-left: 25px
+
+.card
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 49%
+
+.slide
+  text-align: center
+  img
+    width: 80%
+
+.slider
+  margin: 0 auto
+  &__prev,
+  &__next
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: 1px solid #ED6B6A
+    background: transparent
+    color: #ED6B6A
+    cursor: pointer
+    &:focus
+      background-color: #ED6B6A
+      color: #ffffff
+    &:active
+      border: 0
+    
+.slider__prev,
+.slider__next
+  position: absolute;
+  bottom: 50%  // fallback
+  bottom: calc(50% - 50px/2);  // 50% высоты стайдера - половина высоты кнопки
+
+.slider__prev
+  left: 0
+
+.slider__next
+  right: 0
+
+.review
+  width: 49%
+  border: 1px solid #DBE7FF
+  padding: 2.5rem 
+  color: #173343
+  margin: 0 37px 37px 0
+  &:last-child
+    margin-right: 0
+  &__title
+    font-family: 'Montserrat Bold'
+    font-size: 1.25rem
+    text-transform: uppercase
+    padding-bottom: 0.5rem 
+    margin: 0
+  h4
+    font-family: 'Noto Sans Regular'
+    font-size: 0.75rem
+    text-transform: uppercase
+    margin: 0
+  p
+    margin: 0.5rem 0 2.125ren 0 
+  a
+    font-size: 0.875rem
+    color: #ED6B6A
+    text-transform: uppercase
+    padding: 2.125rem 0 2.313rem 0
+    position: relative
+    &::after
+      display: block
+      content: ''
+      width: 40px
+      height: 1px
+      background:#ED6B6A
+      position: absolute
+      top: 47%
+      right: -50px
+
+.button-primary
+  width: 100%
+  font-family: 'Noto Sans Regular'
+  font-size: 0.875rem
+  color: #ED6B6A
+  border: 2px solid #ED6B6A
+  background: transparent
+  padding: 1.5rem 0 1.5rem 0
+  position: relative
+  margin-top: 1.31rem
+  &__small,
+  &__fill
+    font-size: 0.775rem
+  &::after
+    display: block
+    content: ''
+    width: 30px
+    height: 2px
+    background:#ED6B6A
+    position: absolute
+    top: 47%
+    right: 0px
+
+.button-primary
+  &__fill
+    color: #ffffff
+    background: #ED6B6A
+    border: 2px solid #ffffff
+    &::after
+      display: block
+      content: ''
+      width: 30px
+      height: 2px
+      background: #ffffff
+      position: absolute
+      top: 47%
+      right: 0px  
+     
+.coworking-contacts
+  width: 100%
+  border: 2px solid #ED6B6A
+  padding: 35px 52px 48px 48px
+  color: #173343
+  margin-top: 40px
+  h5
+    font-family: 'Montserrat Bold'
+    font-size: 1.15rem
+    text-transform: uppercase
+    margin: 0
+  h6
+    color: #99A9C8
+    font-size: 0.75rem
+  hr
+    background: #DBE7FF
+    margin: 35px 0 32px 0
+  span
+    color: #173343
+    font-size: 1.125rem
+  &__phone
+    a
+      color: #173343
+      font-size: 0.875rem
+  &__social
+    a
+      color: #173343
+      padding: 0 2.5rem 0 0
+  &__grey
+    color: #99A9C8
+
+.grey
+  font-size: 0.75rem
+  color: #8897B4
+  text-align: center
+  text-decoration: underline
+
