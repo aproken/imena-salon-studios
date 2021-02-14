@@ -5,22 +5,22 @@ const sass = require('gulp-sass');
 function watch_and_reload() {
   browserSync.init({
       server: {
-         baseDir: "./src",
+         baseDir: ".",
          index: "/index.html"
       },
       notify: false,
       online: true
   });
-  watch('src/sass/**/*.sass', style)
-  watch('src/sass/**/*.scss', style)
-  watch('src/*.html').on('change',browserSync.reload);
-  watch('src/js/*.js').on('change', browserSync.reload);
+  watch('sass/**/*.sass', style)
+  watch('sass/**/*.scss', style)
+  watch('*.html').on('change',browserSync.reload);
+  watch('js/*.js').on('change', browserSync.reload);
 }
 
 function style() {
-  return src('src/sass/**/*.sass', 'src/sass/**/*.scss')
+  return src('sass/**/*.sass', 'sass/**/*.scss')
   .pipe(sass().on('error',sass.logError))
-  .pipe(dest('src/css/'))
+  .pipe(dest('css/'))
   .pipe(browserSync.stream());
 }
 
